@@ -9,7 +9,7 @@ on:
 env:
   FLUTTER_CHANNEL: 'stable' # 'stable', 'beta', or 'master', default to: 'stable'
   FLUTTER_VERSION: '3.19.6'
-  XCODE_VERSION: '14.1.0'
+  XCODE_VERSION: '15.3.0'
   PATH_TO_AAB: 'build/app/outputs/bundle/release/app-release.aab'
   ANDROID_PACKAGE_NAME: 'com.implewise.aitoolkit'
   PATH_TO_IPA: 'build/ios/ipa/flutter_github_actions_basics.ipa'
@@ -17,7 +17,7 @@ jobs:
   ios:
     name: iOS CI/CD
     # needs: code-analysis-and-testing
-    runs-on: macos-12
+    runs-on: macos-latest
     timeout-minutes: 30
     steps:
       - name: Checkout repository
@@ -36,7 +36,7 @@ jobs:
           OAUTH_ANDROID: ${{ secrets.OAUTH_ANDROID }}
         run: |
           echo "Convert base64 strings to files"
-          echo "OAuth Credentials >> $OAUTH_IOS $OAUTH_ANDROID" 
+          echo "OAuth Credentials $OAUTH_IOS $OAUTH_ANDROID" 
           echo "$FS_PROV_FILE" >> prov.temp.txt
           echo "$FS_P12_FILE ">> cert.temp.txt
           base64 --decode prov.temp.txt > prov.temp.mobileprovision
