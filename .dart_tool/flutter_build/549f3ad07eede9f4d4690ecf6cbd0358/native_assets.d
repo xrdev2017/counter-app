@@ -1,0 +1,1 @@
+ /Users/imac/Documents/projects/counter-app/.dart_tool/flutter_build/549f3ad07eede9f4d4690ecf6cbd0358/native_assets.yaml: 
