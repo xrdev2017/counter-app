@@ -8,7 +8,7 @@ on:
   #workflow_dispatch: # to manually run this workflow
 env:
   FLUTTER_CHANNEL: 'stable' # 'stable', 'beta', or 'master', default to: 'stable'
-  FLUTTER_VERSION: '3.19.6'
+  FLUTTER_VERSION: '3.19.3'
   XCODE_VERSION: '14.1.0'
   PATH_TO_AAB: 'build/app/outputs/bundle/release/app-release.aab'
   ANDROID_PACKAGE_NAME: 'com.implewise.aitoolkit'
