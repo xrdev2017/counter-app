@@ -43,7 +43,7 @@ jobs:
           base64 --decode cert.temp.txt > cert.temp.p12
           echo "Copy provisioning file to the correct locations"
           mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
-          cp prov.temp.mobileprovision ~/Library/MobileDevice/Provisioning\ Profiles/prov.mobileprovision
+          cp prov.temp.mobileprovision ~/Library/MobileDevice/Provisioning\ Profiles/
           echo "Create a new keychain & import p12 certificate"
           security create-keychain -p "$FS_KEYCHAIN_PASS" build.keychain
           echo "security create-keychain"
