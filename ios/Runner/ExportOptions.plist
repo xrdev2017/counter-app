@@ -3,21 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>destination</key>
-	<string>upload</string>
-	<key>generateAppStoreInformation</key>
-	<false/>
+	<string>export</string>
 	<key>manageAppVersionAndBuildNumber</key>
 	<true/>
 	<key>method</key>
 	<string>app-store</string>
+	<key>provisioningProfiles</key>
+	<dict>
+		<key>com.xrstudio.counterapp</key>
+		<string>prov</string>
+	</dict>
+	<key>signingCertificate</key>
+	<string>C4386B4A448340897D51DAE6E2C2F9E6816C011D</string>
 	<key>signingStyle</key>
 	<string>manual</string>
 	<key>stripSwiftSymbols</key>
 	<true/>
 	<key>teamID</key>
 	<string>6N9ZNDZL42</string>
-	<key>testFlightInternalTestingOnly</key>
-	<false/>
 	<key>uploadSymbols</key>
 	<true/>
 </dict>
