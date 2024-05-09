@@ -12,7 +12,7 @@ env:
   XCODE_VERSION: '14.1.0'
   PATH_TO_AAB: 'build/app/outputs/bundle/release/app-release.aab'
   ANDROID_PACKAGE_NAME: 'com.implewise.aitoolkit'
-  PATH_TO_IPA: 'build/flutter_github_actions_basics.ipa'
+  PATH_TO_IPA: 'flutter_github_actions_basics.ipa'
 jobs:
   ios:
     name: iOS CI/CD
