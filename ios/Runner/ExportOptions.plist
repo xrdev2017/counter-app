@@ -11,7 +11,7 @@
 	<key>provisioningProfiles</key>
 	<dict>
 		<key>com.xrstudio.counterapp</key>
-		<string>prov</string>
+		<string>counterapp-dis</string>
 	</dict>
 	<key>signingCertificate</key>
 	<string>C4386B4A448340897D51DAE6E2C2F9E6816C011D</string>
