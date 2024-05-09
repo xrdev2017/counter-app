@@ -89,7 +89,8 @@ jobs:
         run: |
           echo "Setup private key"
           mkdir -p ~/.appstoreconnect/private_keys
-          echo "$IOS_API_KEY" >> "~/.appstoreconnect/private_keys/AuthKey_${{ env.IOS_API_KEY_ID }}.p8"
+          echo "$IOS_API_KEY" >> "AuthKey_${{ env.IOS_API_KEY_ID }}.p8"
+          mv "$IOS_API_KEY" ~/.appstoreconnect/private_keys/
           echo "Upload to TestFlight"
           xcrun altool --upload-app -t ios -f $PATH_TO_IPA --apiKey "$IOS_API_KEY_ID" --apiIssuer "$IOS_API_ISSUER_ID"
           echo "Clean up"
