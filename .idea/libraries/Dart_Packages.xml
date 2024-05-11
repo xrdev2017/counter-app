@@ -215,7 +215,14 @@
         <entry key="flutter">
           <value>
             <list>
-              <option value="$PROJECT_DIR$/../../flutter/packages/flutter/lib" />
+              <option value="$USER_HOME$/fvm/versions/3.19.3/packages/flutter/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="flutter_dotenv">
+          <value>
+            <list>
+              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_dotenv-5.1.0/lib" />
             </list>
           </value>
         </entry>
@@ -236,7 +243,7 @@
         <entry key="flutter_test">
           <value>
             <list>
-              <option value="$PROJECT_DIR$/../../flutter/packages/flutter_test/lib" />
+              <option value="$USER_HOME$/fvm/versions/3.19.3/packages/flutter_test/lib" />
             </list>
           </value>
         </entry>
@@ -523,7 +530,7 @@
         <entry key="sky_engine">
           <value>
             <list>
-              <option value="$PROJECT_DIR$/../../flutter/bin/cache/pkg/sky_engine/lib" />
+              <option value="$USER_HOME$/fvm/versions/3.19.3/bin/cache/pkg/sky_engine/lib" />
             </list>
           </value>
         </entry>
@@ -763,6 +770,7 @@
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/file-7.0.0/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/file_testing-3.0.0/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/fixnum-1.1.0/lib" />
+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_dotenv-5.1.0/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_lints-3.0.2/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_template_images-4.2.0/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/frontend_server_client-3.2.0/lib" />
@@ -834,9 +842,9 @@
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/xml-6.5.0/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/yaml-3.1.2/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/yaml_edit-2.1.1/lib" />
-      <root url="file://$PROJECT_DIR$/../../flutter/bin/cache/pkg/sky_engine/lib" />
-      <root url="file://$PROJECT_DIR$/../../flutter/packages/flutter/lib" />
-      <root url="file://$PROJECT_DIR$/../../flutter/packages/flutter_test/lib" />
+      <root url="file://$USER_HOME$/fvm/versions/3.19.3/bin/cache/pkg/sky_engine/lib" />
+      <root url="file://$USER_HOME$/fvm/versions/3.19.3/packages/flutter/lib" />
+      <root url="file://$USER_HOME$/fvm/versions/3.19.3/packages/flutter_test/lib" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

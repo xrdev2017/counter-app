@@ -1,7 +1,14 @@
-import 'package:flutter/material.dart';
+import 'dart:io';
 
-void main() {
+import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
+
+Future<void> main() async {
+  await dotenv.load(fileName: ".env");
+  print("ENV -> ${Platform.environment['OAUTH_IOS']} // ${Platform.environment['OAUTH_ANDROID']}");
+  print("DOT ENV -> ${dotenv.env['OAUTH_IOS']} // ${dotenv.env['OAUTH_ANDROID']}");
   runApp(const MyApp());
+
 }
 
 class MyApp extends StatelessWidget {
