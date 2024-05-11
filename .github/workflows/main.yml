@@ -32,15 +32,16 @@ jobs:
           FS_P12_FILE: ${{ secrets.FS_P12_FILE }}
           FS_P12_PASS: ${{ secrets.FS_P12_PASS }}
           FS_PROV_FILE: ${{ secrets.FS_PROV_FILE }}
-          OAUTH_IOS: ${{ secrets.OAUTH_IOS }}
-          OAUTH_ANDROID: ${{ secrets.OAUTH_ANDROID }}
+          DOT_ENV_FILE: ${{ secrets.DOT_ENV_FILE }}
         run: |
           echo "Convert base64 strings to files"
           echo "OAuth Credentials $OAUTH_IOS $OAUTH_ANDROID" 
           echo "$FS_PROV_FILE" >> prov.temp.txt
           echo "$FS_P12_FILE ">> cert.temp.txt
+          echo "$DOT_ENV_FILE ">> env.temp.txt
           base64 --decode prov.temp.txt > prov.mobileprovision
           base64 --decode cert.temp.txt > cert.temp.p12
+          base64 --decode env.temp.txt > .env
           echo "Copy provisioning file to the correct locations"
           mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
           cp prov.mobileprovision ~/Library/MobileDevice/Provisioning\ Profiles/
